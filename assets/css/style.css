@@ -1,0 +1,36 @@
+.title {
+    background-color: black;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.cities {
+    display: flex;
+    background-color: lightgray;
+    color: black;
+    padding: 0 0 0 10px;
+    margin: auto;
+}
+
+.name {
+    margin: 0 0 2px 0;
+    background-color: white;
+}
+
+.side1 {
+    background-color: lightgray;
+    color: black;
+    margin: 0 0 10px 0;
+}
+
+.searchTitle {
+    font-size: large;
+}
+
+.searchBtn {
+    background-color: lightblue;
+}
