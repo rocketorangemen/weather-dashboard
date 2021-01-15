@@ -1,33 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header class="title">
-        <h1>Weather Dashboard</h1>
+      <h1>Weather Dashboard</h1>
     </header>
+    <div class="row">
+      <aside class="side1 col-4">
+        <div class="cities">
+          <form>
+            <search class="side1 input">
+              <h2 class="searchTitle">Search for a City:</h2>
+              <input type="text" placeholder="City" name="search" id="input"/>
+              <button onclick="hi()" type="submit" class="searchBtn" id="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </search>
+          </form>
+        </div>
+        <div id="theNames">
+          <div class="city1 name">Austin</div>
+          <div class="city2 name">Chicago</div>
+          <div class="city3 name">New York</div>
+          <div class="city3 name">Boston</div>
+          <div class="city3 name">LA</div>
+          <div class="city3 name">Kansas City</div>
+          <div class="city3 name">Seattle</div>
+        </div>
+      </aside>
 
-    <aside class="cities">
-        <div class="city1 name">
-            <div class="city2 name">
-                <div class="city3 name">
-                    <form class="side1">
-                    <search class="side1">
-                        <h2 class="searchTitle">Search for a City:</h2>
-                        <input type="text" placeholder="City" name="search">
-                        <button type="submit" class="searchBtn"><i class="fa fa-search"></i></button>
-                    </search>
-                    </form>
-                Austin</div>
-            Chicago</div>
-        New York</div>
-    </aside>
-
-</body>
+      <div class="col-8">
+        <div class="cityName">
+          <h2>Atlanta</h2>
+          <h3>Temperature</h3>
+          <h3>Humidity</h3>
+          <h3>Wind Speed</h3>
+          <h3>UV Index</h3>
+        </div>
+        
+        <div>
+          <div class="row col-12">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a .</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>    
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
