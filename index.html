@@ -27,30 +27,32 @@
             <search class="side1 input">
               <h2 class="searchTitle">Search for a City:</h2>
               <input type="text" placeholder="City" name="search" id="input"/>
-              <button onclick="hi()" type="submit" class="searchBtn" id="submit">
+              <button class="searchBtn" id="submit">
                 <i class="fa fa-search"></i>
               </button>
             </search>
           </form>
         </div>
         <div id="theNames">
-          <div class="city1 name">Austin</div>
-          <div class="city2 name">Chicago</div>
-          <div class="city3 name">New York</div>
-          <div class="city3 name">Boston</div>
-          <div class="city3 name">LA</div>
-          <div class="city3 name">Kansas City</div>
-          <div class="city3 name">Seattle</div>
+          <ul class="">
+          <li class="name" id="city1" onclick="cityClicked()"></li>
+          <li class="name" id="city2" onclick="cityClicked()">Austin</li>
+          <li class="name" id="city3" onclick="cityClicked()">San Antonio</li>
+          <li class="name" id="city4" onclick="cityClicked()">Corpus Christi</li>
+          <li class="name" id="city5" onclick="cityClicked()">Boston</li>
+          <li class="name" id="city6" onclick="cityClicked()">Washington DC</li>
+          <li class="name" id="city7" onclick="cityClicked()">Los Angeles</li>
+          </ul>
         </div>
       </aside>
 
       <div class="col-8">
         <div class="cityName">
-          <h2>Atlanta</h2>
-          <h3>Temperature</h3>
-          <h3>Humidity</h3>
-          <h3>Wind Speed</h3>
-          <h3>UV Index</h3>
+          <h2 id="city"></h2>
+          <h3 id="temp"></h3>
+          <h3 id="humidity"></h3>
+          <h3 id="windSpeed"></h3>
+          <h3 id="uv"></h3>
         </div>
         
         <div>
@@ -59,46 +61,45 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted"></small>
                 </div>
               </div>
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card </p>
+                 
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted"></small>
                 </div>
               </div>
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This  </p>
+                  
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted"></small>
                 </div>
               </div>
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is </p>
+                
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted"></small>
                 </div>
               </div>
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a .</p>
+                
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted"></small>
                 </div>
               </div>
             </div>    
@@ -106,5 +107,7 @@
       </div>
     </div>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
