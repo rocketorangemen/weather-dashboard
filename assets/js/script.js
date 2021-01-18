@@ -93,5 +93,5 @@ function UVdisplay(lat, lon) {
     var index = response.value;
     console.log(index);
     var uv = document.getElementById("uv");
-    uv.innerHTML = index;
+    uv.innerHTML = index + " UV Index";
   }
